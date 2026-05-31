@@ -85,7 +85,7 @@ catatKematianUnggas(batchId, jumlahMati, itemGudang, batchTetas) {
 - **Database**: Room 2.6.1 + SQLite
 - **State Management**: StateFlow + MVVM
 - **Coroutines**: kotlinx-coroutines 1.7.3
-- **DI**: Hilt 2.48
+- **DI**: Hilt 2.48 (prepared)
 - **Min SDK**: API 31 | **Target SDK**: API 34
 
 ## 🚀 Quick Start
@@ -129,11 +129,44 @@ catatKematianUnggas(batchId, jumlahMati, itemGudang, batchTetas) {
 
 ## 📈 Kalkulasi HPP Real Cost
 
-```kotlin
+```
 HPP = HargaTelur + BiayaListrik + BiayaPenyusutan + BiayaPakan
 BiayaListrik = (Watt / 1000) × JamInkubasi × TarifPLN
 HargaJual = HPP × (1 + PersentaseKeuntungan) [Dibulatkan ke atas]
 ```
+
+## 🗺️ Future Roadmap
+
+### v1.1.0 - "Core Hardening" (Q3 2026)
+- Hilt Dependency Injection
+- Data validation & constraints
+- Firebase Analytics integration
+- Expanded unit tests (80%+ coverage)
+- Enhanced error handling
+- Offline-first architecture
+
+### v1.2.0 - "Cloud Ready" (Q4 2026)
+- Firebase Realtime Database sync
+- User authentication & multi-user support
+- Backup & restore functionality
+- Multi-device synchronization
+- PDF/Excel reporting & export
+
+### v2.0.0 - "Enterprise Grade" (Q2 2027)
+- Advanced analytics dashboard
+- Predictive AI & ML models
+- Advanced inventory optimization
+- Quality assurance tracking
+- Customer relationship management (CRM)
+
+### v3.0.0 - "IoT & AI Integration" (Q4 2027)
+- IoT sensor integration (Bluetooth BLE)
+- Automated climate control
+- ML optimization engine
+- REST API & third-party integrations
+- Web admin dashboard (Next.js)
+
+**👉 See detailed roadmap**: [ROADMAP.md](ROADMAP.md)
 
 ## 🔐 Keamanan & Integritas Data
 
@@ -142,11 +175,33 @@ HargaJual = HPP × (1 + PersentaseKeuntungan) [Dibulatkan ke atas]
 - ✅ **Room Validation**: Type-safe queries
 - ✅ **ProGuard Rules**: Perlindungan kode release
 
+## 📚 Documentation
+
+| Document | Purpose |
+|----------|---------|
+| [SETUP.md](SETUP.md) | Installation & setup guide |
+| [ARCHITECTURE.md](ARCHITECTURE.md) | Complete API reference with examples |
+| [SAMPLE_USAGE.md](SAMPLE_USAGE.md) | 8 real-world workflows |
+| [TESTING.md](TESTING.md) | Unit test examples & coverage |
+| [ROADMAP.md](ROADMAP.md) | **Detailed feature roadmap (v1.1 to v3.0)** ⭐ NEW |
+| [PROJECT_STRUCTURE.md](PROJECT_STRUCTURE.md) | File organization |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Contribution guidelines |
+| [CHANGELOG.md](CHANGELOG.md) | Version history |
+
 ## 📞 Kontribusi
 
-Jika ada saran atau bug report, silakan buat issue atau pull request!
+Interested dalam contributing ke HatchMate? 🤝
+
+1. **Check [ROADMAP.md](ROADMAP.md)** untuk upcoming features
+2. **Read [CONTRIBUTING.md](CONTRIBUTING.md)** untuk guidelines
+3. **Fork & create feature branch** untuk development
+4. **Submit PR** dengan comprehensive tests
+5. **Get merged** dan di-credit di changelog!
 
 ---
 
 **Dibuat oleh**: Senior Android Developer & System Architect  
+**Current Version**: 1.0.0 (31 May 2026)  
+**Next Release**: 1.1.0 (Q3 2026)  
+**Repository**: https://github.com/dhannilow-rgb/HatchMate-Android  
 **Lisensi**: MIT
