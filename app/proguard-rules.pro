@@ -1,0 +1,5 @@
+-keep class com.hatchmate.app.** { *; }
+-keep class androidx.room.** { *; }
+-keep class androidx.lifecycle.** { *; }
+-keep interface androidx.room.** { *; }
+-keepnames class * extends androidx.room.RoomDatabase
